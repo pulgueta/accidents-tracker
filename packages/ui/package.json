@@ -3,24 +3,40 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./config": "./tailwind.config.ts",
+    "./css": "./src/index.css",
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
-    "eslint-config": "workspace:*",
-    "typescript-config": "workspace:*",
+    "@radix-ui/react-slot": "^1.1.0",
     "@turbo/gen": "^1.12.4",
+    "@types/eslint": "^8.56.5",
     "@types/node": "^20.14.8",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@types/eslint": "^8.56.5",
+    "autoprefixer": "^10.4.19",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "eslint": "^8.57.0",
-    "typescript": "^5.5.2"
+    "eslint-config": "workspace:*",
+    "lucide-react": "^0.396.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss": "^3.4.4",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.5.2",
+    "typescript-config": "workspace:*"
   },
   "dependencies": {
     "react": "19.0.0-rc-f994737d14-20240522"
