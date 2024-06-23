@@ -1,0 +1,4 @@
+{
+  "/**/*.{ts}": ["prettier --write", "turbo run lint --"],
+  "**/*.{json,css}": ["prettier --write"]
+}
