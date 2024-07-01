@@ -7,7 +7,11 @@
     "./css": "./src/index.css",
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./calendar": "./src/calendar.tsx",
+    "./input": "./src/input.tsx",
+    "./label": "./src/label.tsx",
+    "./typography": "./src/typography.tsx"
   },
   "sideEffects": [
     "**/*.css"
@@ -17,6 +21,7 @@
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
+    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@turbo/gen": "^1.12.4",
     "@types/eslint": "^8.56.5",
@@ -26,12 +31,14 @@
     "autoprefixer": "^10.4.19",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
     "eslint": "^8.57.0",
     "eslint-config": "workspace:*",
     "lucide-react": "^0.396.0",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "react-day-picker": "^8.10.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.4.4",
     "tailwindcss-animate": "^1.0.7",
