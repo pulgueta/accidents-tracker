@@ -1,5 +1,5 @@
 {
-  "name": "accidents-tracker",
+  "name": "only-tech",
   "private": true,
   "scripts": {
     "build": "turbo build",
